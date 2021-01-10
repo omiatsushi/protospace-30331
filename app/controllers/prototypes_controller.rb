@@ -32,7 +32,7 @@ class PrototypesController < ApplicationController
       if @prototype.update(prototype_params)
         redirect_to prototype_path(@prototype)
       else
-        redirect_to  root_path
+        redirect_to  edit_prototype_path
       end
   end
 
